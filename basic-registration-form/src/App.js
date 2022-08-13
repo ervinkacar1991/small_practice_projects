@@ -38,7 +38,7 @@ export default function App() {
         ) : null} */}
         {submitted && valid ? (
           <div className="success-message">
-            Succes! Thank you for registering
+            Succes! Thank you for registering some
           </div>
         ) : null}
         <input
