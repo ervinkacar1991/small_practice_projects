@@ -7,7 +7,10 @@ import {
   NavbarExtendedContainer,
   NavbarLinkContainer,
   NavbarLink,
+  Logo,
+  OpenLinksButton,
 } from "../styles/Navbar.style";
+import logoImg from "./assets/logo.png";
 
 const Navbar = () => {
   return (
@@ -19,9 +22,12 @@ const Navbar = () => {
             <NavbarLink to="/products">Products</NavbarLink>
             <NavbarLink to="/contact">Contact</NavbarLink>
             <NavbarLink to="/about">About Us</NavbarLink>
+            <OpenLinksButton>&#8801;</OpenLinksButton>
           </NavbarLinkContainer>
         </LeftContainer>
-        <RightContainer></RightContainer>
+        <RightContainer>
+          <Logo src={logoImg}></Logo>
+        </RightContainer>
       </NavbarInnerContainer>
       <NavbarExtendedContainer></NavbarExtendedContainer>
     </NavbarContainer>

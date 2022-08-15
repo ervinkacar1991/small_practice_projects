@@ -39,6 +39,30 @@ export const NavbarLink = styled(Link)`
   font-family: Arial, Helvetica, sans-serif;
   text-decoration: none;
   margin: 10px;
+
+  @media (max-width: 700px) {
+    display: none;
+  }
+`;
+
+export const Logo = styled.img`
+  margin: 10px;
+  max-width: 180px;
+  height: auto;
+`;
+
+export const OpenLinksButton = styled.button`
+  width: 70px;
+  height: 50px;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 45px;
+  cursor: pointer;
+
+  @media (min-width: 700px) {
+    display: none;
+  }
 `;
 
 export const NavbarExtendedContainer = styled.div``;
