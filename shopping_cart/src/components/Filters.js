@@ -46,7 +46,11 @@ const Filters = () => {
 
       <span>
         <label style={{ paddingRight: 10 }}>Rating: </label>
-        <Rating rating={rate} style={{ cursor: "pointer" }} />
+        <Rating
+          rating={rate}
+          onClick={(index) => setRate(index + 1)}
+          style={{ cursor: "pointer" }}
+        />
       </span>
       <Button variant="light">Clear Filters</Button>
     </div>
